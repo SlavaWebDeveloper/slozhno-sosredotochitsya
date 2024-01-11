@@ -22,7 +22,6 @@
   position: relative;
 }
 
-
 .header {
   align-items: start;
 }
@@ -89,7 +88,7 @@
 
 @media (width >= 1024px) {
   .header__theme-menu-button:hover {
-    border-color: var(--accent-color);
+    border-color: var(--accent-color, #ff0070);
   }
 }
 
