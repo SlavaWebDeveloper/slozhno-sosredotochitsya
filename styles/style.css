@@ -31,7 +31,7 @@
   content: "";
   position: absolute;
   inline-size: 25px;
-  block-size: 25px; 
+  block-size: 25px;
 }
 
 .decorated-zone::before {
@@ -91,7 +91,7 @@
   cursor: pointer;
 }
 
-.header__theme-menu-button:hover  {
+.header__theme-menu-button:hover {
   border-color: var(--border-color, #ff0070);
 }
 
@@ -163,13 +163,13 @@
 
 @media (width >= 768px) {
   .section-what .section-title {
-    max-width: clamp(13.75rem, -4.063rem + 37.11vw, 19.688rem); 
+    max-width: clamp(13.75rem, -4.063rem + 37.11vw, 19.688rem);
   }
 }
 
 @media (width >= 768px) {
   .section-how {
-    grid-template-columns: clamp(14.75rem, 11.897rem + 12.17vw, 19.688rem) 1fr;  
+    grid-template-columns: clamp(14.75rem, 11.897rem + 12.17vw, 19.688rem) 1fr;
   }
 
   .section-how .section-title {
