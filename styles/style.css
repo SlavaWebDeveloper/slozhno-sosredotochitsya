@@ -188,7 +188,7 @@
 
 @media (width >= 768px) {
   .section-how {
-    grid-template-columns: clamp(14.75rem, 11.897rem + 12.17vw, 19.688rem) 1fr;
+    grid-template-columns: clamp(14.75rem, -0.063rem + 30.86vw, 19.688rem) 1fr;
   }
 
   .section-how .section-title {
