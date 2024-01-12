@@ -1,5 +1,136 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
+  font-size: 18px;
+  line-height: 23.4px;
+  background-color: var(--background-color, #000028);
+  background-image: var(--background-image, url("../images/cover-image.png") );
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cover {
+  display: grid;
+  padding: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  min-block-size: 100vh;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.header {
+  align-items: start;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inline-size: 25px;
+  block-size: 25px; 
+}
+
+.decorated-zone::before {
+  border-block-start: 1px solid var(--accent-color, #ff0070);
+  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--accent-color, #ff0070);
+  border-block-end: 1px solid var(--accent-color, #ff0070);
+  inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
+}
+
+.rec {
+  display: none;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block: 65px;
+}
+
+@media ( 375px <= width <= 768px) {
+  .header__theme-menu {
+    margin-block: clamp(4.063rem, -2.378rem + 27.48vw, 10.813rem);
+  }
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 12px;
+}
+
+.header__theme-menu-item {
+}
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: 2px 12px;
+  color: var(--accent-color, #ff0070);
+  line-height: 18px;
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover  {
+  border-color: currentColor;
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu-button:hover {
+    border-color: var(--accent-color, #ff0070);
+  }
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  border-color:var(--accent-color, #ff0070);
+  cursor: default;
+  pointer-events: none;
+}
+
+.page-title {
+  color: var(--page-title-color, #db00ff);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.shadow-decor {
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+}
+
+.header__title {
+  color: var(--header-text-color, #000028);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: var(--accent-color, #ff0070);
+  justify-self: end;
+  margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
+}
+
+@media (width > 768px) {
+  .header__title {
+    width: 50%;
+    margin-block: 114px;
+  }
 }
