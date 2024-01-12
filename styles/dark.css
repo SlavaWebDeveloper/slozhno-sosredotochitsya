@@ -30,7 +30,7 @@
 }
 
 .rec::before {
-  content: "REC"; 
+  content: "REC";
   color: var(--accent-color, #ff0070);
   line-height: 24px;
 }
@@ -57,7 +57,7 @@
   }
   
   .page.theme_auto .rec::before {
-    content: "REC"; 
+    content: "REC";
     color: var(--accent-color, #ff0070);
     line-height: 24px;
   }
