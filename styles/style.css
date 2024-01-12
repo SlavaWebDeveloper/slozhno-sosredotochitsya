@@ -171,7 +171,7 @@
 
 .section {
   display: grid;
-  gap: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
+  gap: 20px;
 }
 
 @media (width >= 768px) {
