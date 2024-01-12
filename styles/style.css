@@ -136,7 +136,7 @@
   margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   .header__title {
     width: 50%;
     margin-block: 114px;
