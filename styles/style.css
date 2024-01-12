@@ -187,7 +187,7 @@
 
 .section-sibtitle {
   font-size: inherit;
-  color: var(--article-title-color, #000028);
+  color: var(--header-text-color, #000028);
   background-color: var(--accent-color, #ff0070);
 }
 
@@ -209,7 +209,7 @@
 
 .article__title {
   font-size: inherit;
-  color: var(--article-title-color, #000028);
+  color: var(--header-text-color, #000028);
   background-color: var(--accent-color, #ff0070);
   font-weight: 700;
 }
