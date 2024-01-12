@@ -140,6 +140,7 @@
 
 .header__title {
   color: var(--header-text-color, #000028);
+  width: 100%;
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
@@ -148,10 +149,16 @@
   margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
 }
 
-@media (375px <= width < 769px) {
+@media (375px <= width < 768px) {
+  .header__title {
+    margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
+  }
+}
+
+@media (width > 768px) {
   .header__title {
     width: 50%;
-    margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
+    margin-block: 114px;
   }
 }
 
