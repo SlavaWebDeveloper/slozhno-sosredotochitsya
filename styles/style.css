@@ -148,10 +148,10 @@
   margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
 }
 
-@media (width >= 768px) {
+@media (375px <= width < 769px) {
   .header__title {
     width: 50%;
-    margin-block: 114px;
+    margin-block: clamp(3.438rem, -2.944rem + 27.23vw, 10.125rem);
   }
 }
 
@@ -164,7 +164,7 @@
 
 .section {
   display: grid;
-  gap: 20px;
+  gap: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
 }
 
 @media (width >= 768px) {
