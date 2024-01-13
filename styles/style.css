@@ -23,6 +23,8 @@
 }
 
 .header {
+  min-block-size: 668px;
+  block-size: 100vh;
   align-items: start;
 }
 
@@ -118,18 +120,22 @@
 .page-title {
   color: var(--page-title-color, #db00ff);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: 116px;
   line-height: 82.5%;
 }
 
-@media (375px <= width <= 768px) {
+@media (380px < width <= 768px) {
   .page-title {
+    position: relative;
+    left: -20px;
     font-size: clamp(7.25rem, 7.011rem + 1.02vw, 7.5rem);
   }
 }
 
 @media (width > 768px) {
   .page-title {
+    position: relative;
+    left: -20px;
     font-size: clamp(7.5rem, 0.563rem + 14.45vw, 9.813rem);
   }
 }
@@ -298,5 +304,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  min-block-size: 668px;
+  block-size: 100vh;
   background-color: var(--background-color, #000028);
 }
