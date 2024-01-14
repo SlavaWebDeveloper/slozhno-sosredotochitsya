@@ -23,7 +23,7 @@
 }
 
 .header {
-  min-block-size: 100vh;
+  block-size: 100vh;
   align-items: start;
 }
 
@@ -55,12 +55,12 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: clamp(4.063rem, -2.378rem + 27.48vw, 10.813rem);
+  margin-block: 65px;
 }
 
-@media (375px <= width <= 768px) {
+@media (width >= 768px) {
   .header__theme-menu {
-    margin-block: clamp(4.063rem, -2.378rem + 27.48vw, 10.813rem);
+    margin-block: 172px 80px;
   }
 }
 
@@ -161,7 +161,7 @@
 }
 
 
-@media (width > 769px) {
+@media (width >= 768px) {
   .header__title {
     width: 50%;
     margin-block: 114px;
@@ -171,7 +171,7 @@
 .main {
   display: grid;
   gap: clamp(3.125rem, 1.336rem + 7.63vw, 5rem);
-  padding: clamp(2.5rem, 1.307rem + 5.09vw, 3.75rem) clamp(0.625rem, 0.264rem + 1.54vw, 1.25rem);
+  padding: clamp(2.5rem, 1.307rem + 5.09vw, 3.75rem) clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
   background-color: var(--background-color, #000028);
 }
 
