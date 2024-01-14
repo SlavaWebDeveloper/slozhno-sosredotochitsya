@@ -124,7 +124,7 @@
 }
 
 @media (380px < width <= 768px) {
-  .page-title {
+  .header-title {
     position: relative;
     left: -20px;
     font-size: clamp(7.25rem, 7.011rem + 1.02vw, 7.5rem);
@@ -132,7 +132,7 @@
 }
 
 @media (width > 768px) {
-  .page-title {
+  .header-title {
     position: relative;
     left: -20px;
     font-size: clamp(7.5rem, 0.563rem + 14.45vw, 9.813rem);
