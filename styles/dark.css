@@ -25,8 +25,8 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: clamp(1.25rem, 0.925rem + 1.39vw, 1.813rem);
-  inset-block-start: clamp(0.625rem, 0.264rem + 1.54vw, 1.25rem);
+  inset-inline-end: clamp(1.188rem, 0.591rem + 2.54vw, 1.813rem);
+  inset-block-start: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
 }
 
 .rec::before {
@@ -52,8 +52,8 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    inset-inline-end: clamp(1.25rem, 0.925rem + 1.39vw, 1.813rem);
-    inset-block-start: clamp(0.625rem, 0.264rem + 1.54vw, 1.25rem);
+    inset-inline-end: clamp(1.188rem, 0.591rem + 2.54vw, 1.813rem);
+    inset-block-start: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
   }
   
   .page.theme_auto .rec::before {
